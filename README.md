@@ -26,3 +26,12 @@ The dataset used in this project contains the following columns:
 - `newbalanceDest`: The balance of the destination account after the transaction.
 - `isFraud`: Indicates whether the transaction is fraudulent (1) or not (0).
 - `isFlaggedFraud`: Indicates whether the transaction was flagged as fraud by the system.
+
+## Data Exploration
+Before training the models, we performed exploratory data analysis (EDA) to understand the dataset better. Key observations include:
+
+Imbalanced Dataset: The dataset is highly imbalanced, with only 0.13% of transactions being fraudulent. This imbalance required careful handling during model training.
+
+Transaction Types: The dataset includes five types of transactions: CASH_OUT, PAYMENT, CASH_IN, TRANSFER, and DEBIT. Fraudulent transactions are primarily associated with CASH_OUT and TRANSFER types.
+
+Correlation Analysis: We analyzed the correlation between features and the target variable (isFraud). Features like amount, oldbalanceOrg, and newbalanceOrig showed higher correlation with fraud compared to others.
