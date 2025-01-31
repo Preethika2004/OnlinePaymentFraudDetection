@@ -69,9 +69,9 @@ These models were selected to provide a diverse range of approaches to the probl
 
 The accuracy of the models on the test set is as follows:
 
-**Logistic Regression:** 98.3%
-**K-Nearest Neighbors:** 98.8%
-**Support Vector Machine:** 97.6%
-**Decision Tree:** 99.4%
+-**Logistic Regression:** 98.3%
+-**K-Nearest Neighbors:** 98.8%
+-**Support Vector Machine:** 97.6%
+-**Decision Tree:** 99.4%
 
 The Decision Tree model achieved the highest accuracy, making it the most effective model for this dataset. However, it's important to note that accuracy alone may not be the best metric for imbalanced datasets. Future work could include evaluating models using precision, recall, and F1-score to better assess their performance on fraud detection.
