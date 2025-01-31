@@ -77,4 +77,4 @@ The accuracy of the models on the test set is as follows:
 - **Support Vector Machine:** 97.6%
 - **Decision Tree:** 99.4%
 
-The Decision Tree model achieved the highest accuracy, making it the most effective model for this dataset. However, it's important to note that accuracy alone may not be the best metric for imbalanced datasets. Future work could include evaluating models using precision, recall, and F1-score to better assess their performance on fraud detection.
+The Decision Tree model achieved the highest accuracy, making it the most effective model for this dataset. Since the dataset we had is imbalanced, the decision trees might be performing better compared to other models.
