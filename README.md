@@ -9,3 +9,6 @@ This project focuses on detecting fraudulent online payment transactions using m
 - [Features Selection](#Features-Selection)
 - [Model Training](#Model-Training)
 - [Results](#Results)
+
+## Introduction
+Online payment fraud is a significant issue in the digital age. Detecting fraudulent transactions in real-time can help prevent financial losses and protect users. This project uses machine learning models to classify transactions as fraudulent or legitimate based on various transaction features. The dataset contains transaction details, and the goal is to identify patterns that distinguish fraudulent transactions from legitimate ones.
