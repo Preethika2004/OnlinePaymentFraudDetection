@@ -14,6 +14,9 @@ This project focuses on detecting fraudulent online payment transactions using m
 Online payment fraud is a significant issue in the digital age. Detecting fraudulent transactions in real-time can help prevent financial losses and protect users. This project uses machine learning models to classify transactions as fraudulent or legitimate based on various transaction features. The dataset contains transaction details, and the goal is to identify patterns that distinguish fraudulent transactions from legitimate ones.
 
 ## Dataset
+
+Dataset: [Kaggle_Transaction_Dataset](https://www.kaggle.com/datasets/jainilcoder/online-payment-fraud-detection)
+
 The dataset used in this project contains the following columns:
 - `step`: Represents a unit of time (1 step = 1 hour).
 - `type`: Type of transaction (e.g., CASH_OUT, PAYMENT, CASH_IN, TRANSFER, DEBIT).
@@ -34,7 +37,7 @@ Before training the models, we performed exploratory data analysis (EDA) to unde
 - **Transaction Types:** The dataset includes five types of transactions: *CASH_OUT*, *PAYMENT*, *CASH_IN*, *TRANSFER*, and *DEBIT*. Fraudulent transactions are primarily associated with CASH_OUT and TRANSFER types.
 - **Correlation Analysis:** We analyzed the correlation between features and the target variable (`isFraud`). Features like `amount`, `oldbalanceOrg`, and `newbalanceOrig` showed higher correlation with fraud compared to others.
 
-## Feature Selection
+## Features Selection
 We selected the following features for training the models:
 
 - `type`: The type of transaction (e.g., CASH_OUT, TRANSFER) is a critical feature because fraudulent activities are often concentrated in specific transaction types.
@@ -44,7 +47,7 @@ We selected the following features for training the models:
 
 These features were chosen because they directly relate to the transaction's nature and are likely to influence whether a transaction is fraudulent or not. Other features, such as nameOrig and nameDest, were excluded because they are unique identifiers and do not contribute meaningfully to the model.
 
-## Model Selection
+## Model Training
 We evaluated four machine learning models for this project:
 
 1. **Logistic Regression:**
