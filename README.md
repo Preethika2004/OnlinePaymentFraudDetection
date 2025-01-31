@@ -12,3 +12,17 @@ This project focuses on detecting fraudulent online payment transactions using m
 
 ## Introduction
 Online payment fraud is a significant issue in the digital age. Detecting fraudulent transactions in real-time can help prevent financial losses and protect users. This project uses machine learning models to classify transactions as fraudulent or legitimate based on various transaction features. The dataset contains transaction details, and the goal is to identify patterns that distinguish fraudulent transactions from legitimate ones.
+
+## Dataset
+The dataset used in this project contains the following columns:
+- `step`: Represents a unit of time (1 step = 1 hour).
+- `type`: Type of transaction (e.g., CASH_OUT, PAYMENT, CASH_IN, TRANSFER, DEBIT).
+- `amount`: The amount of the transaction.
+- `nameOrig`: The name of the origin account.
+- `oldbalanceOrg`: The balance of the origin account before the transaction.
+- `newbalanceOrig`: The balance of the origin account after the transaction.
+- `nameDest`: The name of the destination account.
+- `oldbalanceDest`: The balance of the destination account before the transaction.
+- `newbalanceDest`: The balance of the destination account after the transaction.
+- `isFraud`: Indicates whether the transaction is fraudulent (1) or not (0).
+- `isFlaggedFraud`: Indicates whether the transaction was flagged as fraud by the system.
