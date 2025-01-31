@@ -44,6 +44,34 @@ We selected the following features for training the models:
 
 These features were chosen because they directly relate to the transaction's nature and are likely to influence whether a transaction is fraudulent or not. Other features, such as nameOrig and nameDest, were excluded because they are unique identifiers and do not contribute meaningfully to the model.
 
+## Model Selection
+We evaluated four machine learning models for this project:
 
+1. **Logistic Regression:**
+- A simple and interpretable model that works well for binary classification tasks.
+- Chosen as a baseline model to compare against more complex models.
 
+2. **K-Nearest Neighbors (KNN):**
+- A non-parametric model that classifies transactions based on similarity to neighboring data points.
+- Useful for capturing local patterns in the data.
 
+3. **Support Vector Machine (SVM):**
+- A powerful model for classification tasks, especially when the data is not linearly separable.
+- Chosen to explore its performance on imbalanced datasets.
+
+4. **Decision Tree:**
+- A tree-based model that splits the data based on feature values to make predictions.
+- Chosen because it can handle imbalanced data and capture non-linear relationships.
+
+These models were selected to provide a diverse range of approaches to the problem, from simple linear models to more complex, non-linear models.
+
+## Results
+
+The accuracy of the models on the test set is as follows:
+
+**Logistic Regression:** 98.3%
+**K-Nearest Neighbors:** 98.8%
+**Support Vector Machine:** 97.6%
+**Decision Tree:** 99.4%
+
+The Decision Tree model achieved the highest accuracy, making it the most effective model for this dataset. However, it's important to note that accuracy alone may not be the best metric for imbalanced datasets. Future work could include evaluating models using precision, recall, and F1-score to better assess their performance on fraud detection.
