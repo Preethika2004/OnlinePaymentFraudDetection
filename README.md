@@ -68,7 +68,7 @@ These models were selected to provide a diverse range of approaches to the probl
 ## Results
 
 The accuracy of the models on the test set is as follows:
-
+ 
 -**Logistic Regression:** 98.3%
 -**K-Nearest Neighbors:** 98.8%
 -**Support Vector Machine:** 97.6%
