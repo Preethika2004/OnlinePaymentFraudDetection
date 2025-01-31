@@ -37,13 +37,10 @@ Before training the models, we performed exploratory data analysis (EDA) to unde
 ## Feature Selection
 We selected the following features for training the models:
 
-type: The type of transaction (e.g., CASH_OUT, TRANSFER) is a critical feature because fraudulent activities are often concentrated in specific transaction types.
-
-amount: The transaction amount is a strong indicator of fraud, as fraudulent transactions often involve large amounts.
-
-oldbalanceOrg: The balance of the origin account before the transaction can help identify unusual activity, such as sudden large withdrawals.
-
-newbalanceOrig: The balance of the origin account after the transaction provides additional context about the transaction's impact on the account.
+- `type`: The type of transaction (e.g., CASH_OUT, TRANSFER) is a critical feature because fraudulent activities are often concentrated in specific transaction types.
+- `amount`: The transaction amount is a strong indicator of fraud, as fraudulent transactions often involve large amounts.
+- `oldbalanceOrg`: The balance of the origin account before the transaction can help identify unusual activity, such as sudden large withdrawals.
+- `newbalanceOrig`: The balance of the origin account after the transaction provides additional context about the transaction's impact on the account.
 
 These features were chosen because they directly relate to the transaction's nature and are likely to influence whether a transaction is fraudulent or not. Other features, such as nameOrig and nameDest, were excluded because they are unique identifiers and do not contribute meaningfully to the model.
 
